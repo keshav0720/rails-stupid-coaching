@@ -20,7 +20,7 @@
  .screen {
 	height: 100vh;
  }
-.ask-form {
+.ask-form, .ask-form1 {
 	position: absolute;
 	background: #f1f1f1;
 	top: 50%;
@@ -87,4 +87,7 @@ h1 {
 h1:hover {
 	letter-spacing: 0.85px;
 	transition: all 0.3s ease-in-out;
+}
+.marg-top {
+	margin-top: 1rem;
 }
