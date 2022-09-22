@@ -1,0 +1,90 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ /* Fonts import */
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Satisfy&family=Source+Sans+Pro&display=swap');
+
+ /* Added codes */
+ .screen {
+	height: 100vh;
+ }
+.ask-form {
+	position: absolute;
+	background: #f1f1f1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2rem;
+	border-radius: 6px;
+	z-index: 1;
+}
+.ask-form::before {
+	position: absolute;
+	content: '';
+	height: 0rem;
+	width: 2.5rem;
+	border: rgb(0 255 170) 1px solid;
+	top: 44%;
+	left: 10.6%;
+	z-index: 9999;
+}
+b {
+	font-family: 'Satisfy', cursive;
+	color: #0fa;
+	text-transform: lowercase;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+input[type="submit"] {
+	display: inline-block;
+	background: #2196f3;
+	color: #ffffff;
+	border: transparent;
+	font-family: 'Source Sans Pro', sans-serif;;
+	padding: 0.4rem 1rem;
+	transition: all 0.2s ease-in-out;
+}
+input[type="submit"]:hover {
+	background: #395b76;
+	color: #f1f1f1;
+	transition: all 0.2s ease-in-out;
+}
+form {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+input[type="text"] {
+	border: #f1f1f1;
+	width: 100%;
+}
+h1 {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all 0.3s ease-in-out;
+}
+h1:hover {
+	letter-spacing: 0.85px;
+	transition: all 0.3s ease-in-out;
+}
